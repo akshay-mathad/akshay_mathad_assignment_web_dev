@@ -1,0 +1,163 @@
+.register-content {
+    height: auto;
+    width: 90%;
+    /* margin: 0 auto;  */
+    margin: 5%;
+    /* padding: 0%; */
+    display: flex;
+    flex-direction: row;
+    background-color: #003366;
+    border-radius: 2%;
+    /* color: rgb(44, 106, 106); */
+}
+
+.register-image {
+    height: 100%;
+    width: 60%;
+    transform: scale(1);
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
+
+.registration-form{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+}
+
+.sign-up-header-content{
+    display: flex;
+    flex-direction: column;
+    margin:10% 0 10% 0;
+}
+
+.sign-up-header{
+    margin: 0 auto;
+    
+}
+
+.sign-up-label{
+    font-size: x-small;
+    margin: 0 auto;
+    padding: 2%
+}
+
+.signup-form {
+    padding: 5%;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+    font-size: 12px;
+    color: azure;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #0a0909;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .signup-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Name Input Group */
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-group-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name-group-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name-group-2 input {
+    width: calc(50% - 8px);
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  /* Terms and Conditions Line */
+  .tnc-line {
+    display: flex;
+    flex-direction: row;
+    margin:0 0 5% 0;
+    align-items: center;
+  }
+  
+  .tnc-line input {
+    margin-right: 0px;
+  }
+
+  .tnc-label{
+    font-size: xx-small;
+  }
+  
+  /* Buttons */
+  .submit-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-buttons button {
+    padding: 10px 20px;
+    border: solid #ffffff 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 45%;
+  }
+  
+  .submit-buttons .register {
+    background-color: #000000;
+  }
+  
+  .submit-buttons .login {
+    background-color: #007bff;
+  }
+  
+  .submit-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .name-group-2 {
+      flex-direction: column;
+    }
+  
+    .name-group-2 input {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    .submit-buttons {
+      flex-direction: column;
+    }
+  
+    .submit-buttons button {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  

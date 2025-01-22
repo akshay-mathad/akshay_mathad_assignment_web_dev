@@ -1,0 +1,36 @@
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}

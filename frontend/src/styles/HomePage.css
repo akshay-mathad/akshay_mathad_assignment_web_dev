@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-btn {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .nav-btn.signup {
+    background-color: #ffd700;
+    color: #003366;
+    border: none;
+  }
+  
+  /* Main Section */
+  .main {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .text-content .highlight {
+    color: #ffd700;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .primary-btn {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .secondary-btn {
+    background: none;
+    color: #003366;
+    border: 2px solid #003366;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Image Section */
+  .image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+  }
+  
+  .footer-left {
+    max-width: 50%;
+  }
+  
+  .footer-left img {
+    height: 50px;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-right .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  

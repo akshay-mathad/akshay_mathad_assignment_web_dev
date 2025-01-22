@@ -1,0 +1,101 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.login-image {
+  flex: 1; /* Take up half the space */
+  border-radius: 10px 0 0 10px; /* Rounded corners */
+}
+
+.login-form {
+  flex: 1; /* Take up half the space */
+  background-color: #003366; /* White background for the form */
+  padding: 40px;
+  border-radius: 5%;
+  border-radius: 0 10px 10px 0; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em; /* Larger font size for the header */
+  color: #ffffff; /* Dark blue color for the header */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels */
+  color: #003366; /* Dark blue color for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1em; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.forgot-pass {
+  text-align: right; /* Align forgot password link to the right */
+  margin-bottom: 20px; /* Space below the link */
+  color: #007bff; /* Blue color for the link */
+  cursor: pointer; /* Pointer cursor for the link */
+}
+
+.forgot-pass:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.login-button {
+  width: 40%; /* Full width button */
+  padding: 10px; /* Padding inside button */
+  background-color: white; /* Dark blue background */
+  color: #003366; /* White text */
+  border: solid #ffffff 1px; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1em; /* Font size for button */
+  cursor: pointer; /* Pointer cursor for button */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.signup-link {
+  text-align: center; /* Center align the signup link */
+  margin-top: 20px; /* Space above the link */
+}
+
+.signup-link a {
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* No underline */
+}
+
+.signup-link a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  text-align: center; /* Center align error messages */
+  margin-bottom: 20px; /* Space below error messages */
+}
