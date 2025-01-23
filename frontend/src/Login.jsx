@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import './styles/Login.css';
 import Header from "./Header";
 import Footer from "./Footer";
-import axios from "axios"; // Import axios for making API calls
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import axios from "axios"; 
+import { useNavigate } from 'react-router-dom'; 
 
 const Login = () => {
-  const [email, setEmail] = useState(""); // State for email
-  const [password, setPassword] = useState(""); // State for password
-  const [error, setError] = useState(""); // State for error messages
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [email, setEmail] = useState(""); 
+  const [password, setPassword] = useState(""); 
+  const [error, setError] = useState(""); 
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
 
     try {
       const response = await axios.post("http://localhost:5000/api/login", {
@@ -21,13 +21,12 @@ const Login = () => {
       });
 
       if (response.status === 200) {
-        // Handle successful login
+       
         alert("Login successful!");
-        navigate("/main"); // Navigate to the Main page
+        navigate("/main"); 
       }
     } catch (err) {
       console.error("Login error:", err);
-      // Set error message based on the response from the server
       if (err.response && err.response.data) {
         setError(err.response.data.message);
       } else {
@@ -42,7 +41,7 @@ const Login = () => {
       <div className="login-content">
         <div className="login-form">
           <h2 className="login-header">Login</h2>
-          {error && <div className="error-message">{error}</div>} {/* Display error message */}
+          {error && <div className="error-message">{error}</div>} 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -52,8 +51,8 @@ const Login = () => {
                 name="email"
                 placeholder="Enter your email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)} // Update email state
-                required // Make this field required
+                onChange={(e) => setEmail(e.target.value)} 
+                required 
               />
             </div>
             <div className="form-group">
@@ -64,8 +63,8 @@ const Login = () => {
                 name="password"
                 placeholder="Enter your password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)} // Update password state
-                required // Make this field required
+                onChange={(e) => setPassword(e.target.value)} 
+                required 
               />
             </div>
             <div className="forgot-pass">Forgot Password?</div>
